@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+        <style>
+            * {font-family: 'Roboto Mono', monospace; font-weight: 500; font-size: 12px;}
+            .contenedorflex { display: flex;justify-content: center; }
+            .contenedor {justify-content: center; margin: 0 auto;}
+            .celdarow {border: 1px solid black; width: 350px; padding: 10px; text-align: center;}
+            .celda {border: 1px solid black; width: 722px; padding: 10px; text-align: center;}
+            .celdadesc {border: 1px solid black;position:relative; margin-left: 300px;margin-top:-15px; width: 400px; padding: 10px; text-align: center; display:block}
+            .left {text-align: left;   margin-top: 0em; margin-bottom: 0em;}
+            .right {text-align: right;   margin-top: 0em; margin-bottom: 0em;}
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+        <div class="contenedorflex">
+                <div class="celdarow">COMERCIO EXTERIOR Y CAMBIOS</div>
+                <div class="celdarow"></div>
+        </div>
+        <div class="contenedorflex">
+            <div class="celda">Datos del Banco</div>
+    </div>
+        <div class="contenedorflex">
+            <div class="celdarow" style=" text-align: left;">
+                <p class="left">BANCO DE GALICIA Y BUENOS AIRES SAU
+            </br>
+            TTE. GRAL. PERON 407
+        </br>
+        CAPITAL FEDERAL</div></p>
+            <div class="celdarow">Datos Impositivos
+            <p class="left">
+            Cuit Nro.: %%Cuit_Ben_Pais%%
+            </br> 
+            I.V.A.: RESPONSABLE INSCRIPTO
+            </br> 
+            Ingr. Brutos Nro.: 
+            </p>
+            </div>
+    </div>
+    <div class="contenedorflex">
+        <div class="celdarow" style=" text-align: left;">
+            <p class="left">Ordenante :</br>
+            %%Ordenante%%</div></p>
+        <div class="celdarow">
+        <p class="left">
+        Operación Nro.: %%Nro_Operacion%%
+        </br> 
+        Cuenta : %%Cuenta%%
+        </p>
+        </div>
+</div>
+<div class="contenedorflex">
+    <div class="celda" style="text-align: left">
+        <p class="right">%%Lugar_Fecha%%</p></br> 
+        Por la presente dejamos constancia de haber retenido a: %%Beneficiario%%</br> 
+        Que se domicilia en : %%Domicilio_Ben%% , y que cuyo Nro. de </br> 
+        CUIT/CUIL es : %%Cuit_Ben_Pais%% , los siguientes conceptos: %%Concepto_Impuesto%%
+    </div>
+</div>
+<div class="contenedorflex">
+    <div class="celda" style="text-align: left;">
+        Impuesto --------------<span class="celdadesc">: GANANCIAS</span>
+        En concepto de --------------<span class="celdadesc">: GANANCIAS</span>
+        Importe sujeto a retención --------------<span class="celdadesc">: GANANCIAS</span>
+        Cod. Alicuota - Alicuota --------------<span class="celdadesc">: %%Cod_Alicuota%% %%Alicuota%%</span>
+        C.D.I. --------------<span class="celdadesc">: %%Conv_Doble_Imp%%</span>
+        Importe Retenido --------------<span class="celdadesc">: %%Importe_retenido%%</span>
+<Br/>
+        <div class="celda" style="padding: 10px 0 10px 0; text-align: left;">Importe total retenido, pesos: %%Importe_retenido_texto%%</div>
+
+        <p>El importe retenido por ganancias, ingresa a la AFIP según declaración jurada del mes de: %%Mes_Dec_jurada%% de %%Año_Dec_jurada%%.</p>
+            <p style="text-align:right">por BANCO DE GALICIA Y BUENOS AIRES SAU</p>
+            <p style="position:relative; bottom: -30px; right: -10px; background-color:#ffffff;width:125px;">AVGAN101/GAAVIDGI</p>
+    </div>
+    
+
+</div>
+
+</div>
+    </body>
+</html>
